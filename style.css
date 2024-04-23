@@ -40,11 +40,13 @@ a:active {
 .heading {
   text-align: center;
   margin: 1em 0 1em 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .categories {
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 .category {
@@ -56,7 +58,6 @@ a:active {
   font-weight: bold;
   font-size: 1.2em;
   cursor: pointer;
-  margin-bottom: 2em;
 
   display: flex;
   justify-content: center;
@@ -88,6 +89,8 @@ a:active {
 .items {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
   gap: 16px;
 }
 
@@ -144,7 +147,7 @@ a:active {
 
 .item-price {
   display: flex;
-  gap: 16px;
+  gap: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -168,4 +171,34 @@ a:active {
   border-radius: 10px;
   height: 3em;
   font-weight: bold;
+}
+
+/* --------------Respnosive-------------- */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .heading {
+    font-size: 1.8em;
+  }
+  .categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .category {
+    min-width: 80vw;
+  }
+
+  .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .category {
+    min-width: 250px;
+  }
 }
