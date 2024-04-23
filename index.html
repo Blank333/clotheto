@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/men.svg" />
     <title>Clotheto Shopping</title>
   </head>
 
   <body>
     <div class="container">
       <h1 class="heading">SELECT YOUR CHOICE</h1>
+
+      <!-- Category buttons -->
       <div class="categories">
-        <button class="category men">
-          <img class="icon men-icon" src="./assets/men.svg" alt="men" />
+        <button class="category men selected">
+          <img class="icon" src="./assets/men.svg" alt="men" />
           Men
         </button>
         <button class="category women">
-          <img class="icon women-icon" src="./assets/women.svg" alt="women" />
+          <img class="icon" src="./assets/women.svg" alt="women" />
 
           Women
         </button>
 
         <button class="category kids">
-          <img class="icon kids-icon" src="./assets/kids.svg" alt="kids" />
+          <img class="icon" src="./assets/kids.svg" alt="kids" />
           Kids
         </button>
       </div>
+
+      <!-- Item cards -->
       <div class="items">
         <template id="item-template">
           <div class="card">
@@ -48,6 +53,7 @@
         </template>
       </div>
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
