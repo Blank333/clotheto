@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
-body {
-  height: 100%;
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
+  font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
 }
+
 a {
   display: inline-block;
   color: lightgrey;
@@ -34,3 +37,43 @@ a:active {
   transform: scale(0.98);
 }
 
+.categories {
+  display: flex;
+}
+
+.category {
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  width: 20vw;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.category:focus {
+  background-color: black;
+  color: white;
+}
+.men:focus > .men-icon {
+  display: inline-block;
+}
+
+.women:focus > .women-icon {
+  display: inline-block;
+}
+
+.icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+
+.kids:focus > .kids-icon {
+  display: inline-block;
+}
